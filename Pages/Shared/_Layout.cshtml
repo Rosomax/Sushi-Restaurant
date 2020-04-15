@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - Sushi_Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="~/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .title {
+            font-family: 'Lobster', cursive;
+            color: red;
+            font-size: 2.8vw;
+            margin-right: 1vw;
+        }
+
+            .title:hover {
+                color: red;
+                text-decoration-line: none;
+            }
+
+        .navigationItem {
+            font-size: 1.1vw;
+        }
+
+        .navbarOnTop {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+    <style type="text/css" media="screen and (max-width:959px)">
+        .title {
+            font-size: 4vw;
+        }
+
+        .navigationItem {
+            font-size: 2vw;
+        }
+    </style>
+    <style type="text/css" media="screen and (max-width:550px)">
+        .title {
+            font-size: 6vw;
+        }
+
+        .navigationItem {
+            font-size: 5vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
+            <div class="container" style="top:50px">
+                <a class="navbar-brand, title" asp-area="" asp-page="/Index">Sushi Restaurant</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item, navigationItem">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index "><i class="fas fa-home"></i> Start</a>
+                        </li>
+                        <li class="nav-item, navigationItem">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index "><i class="fas fa-utensils"></i> Menu</a>
+                        </li>
+                        <li class="nav-item, navigationItem">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy"><i class="fas fa-phone-alt"></i> Kontakt</a>
+                        </li>
+                        <li class="nav-item, navigationItem">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy"><i class="fas fa-truck"></i> Dostawa</a>
+                        </li>
+                        <li class="nav-item, navigationItem">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy"><i class="fas fa-comments"></i> Opinie</a>
+                        </li>
+                        <li class="nav-item, navigationItem">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy"><i class="fas fa-user-cog"></i> Administrator</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - Sushi Restaurant made by Michał Białek - <a href="https://www.linkedin.com/in/micha%C5%82-bia%C5%82ek-7195651a4/">Linkedin</a>  <a href="https://github.com/Rosomax">Github</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/font-awesome/js/all.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
