@@ -10,6 +10,50 @@
         font-size: 2rem;
         text-align: center;
     }
+
+    .parallax {
+        background-image: url('images/background-1.jpg');
+        height: 35vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+    }
+
+
+    .red {
+        background-color: red;
+        color: white;
+        font-family: 'Lobster', cursive;
+        font-size: 1.5vw;
+        height: auto;
+        border-top: 2px solid white;
+        text-align: center;
+    }
+
+    .black {
+        background-color: white;
+        color: black;
+        font-family: Arial;
+        font-size: 1.5vw;
+        height: auto;
+        border-bottom: 2px solid red;
+        text-align: center;
+    }
+
+    .topHead {
+        background-color: white;
+        color: black;
+        font-family: 'Lobster', cursive;
+        font-size: 2vw;
+        height: auto;
+        text-align: center;
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+    }
 </style>
 
 <div class="container">
@@ -41,9 +85,31 @@
         </div>
         <div class="col-md-4 bottomIndexDiv">
             <img class="w-100" src="~/images/aboutUs.jpg" />
-        O nas</div>
+            O nas
+        </div>
         <div class="col-md-4 bottomIndexDiv">
             <img class="w-100" src="~/images/cooperate.jpg" />
-        Współpraca</div>
+            Współpraca
+        </div>
+        <div class="col-md-12 parallax">
+        </div>
+        <div id="Kontakt" name="Kontakt" class="col-md-12 topHead"> KONTAKT</div>
+        <div class="col-md-3 red" style="border-top: 2px solid red">TELEFON <i class="fas fa-mobile-alt"></i></div><div class="col-md-9 black">512-512-512</div>
+        <div class="col-md-3 red">GODZINY OTWARCIA <i class="fas fa-clock"></i></div><div class="col-md-9 black">
+            Poniedziałek - Czwartek 11:00-22:00<br />Piątek - Niedziela 13:00-00:00
+        </div>
+        <div class="col-md-3 red">LOKALIZACJA <i class="fas fa-map-marker-alt"></i></div><div class="col-md-9 black">Warszawa <br />ul. Przykładowa 15</div>
+        <div class="col-md-3 red">E-MAIL <i class="fas fa-envelope"></i></div><div class="col-md-9 black"><a href="mailto:sushirestaurant@domain.com ">sushirestaurant@domain.com</a></div>
+        <div class="col-md-12 parallax" style="background-image: url('images/background-2.jpg');"> </div>
+        <div id="Dostawa" name="Dostawa"  class="col-md-12 topHead"> DOSTAWA</div>
+        <div class="col-md-3 red" style="border-top: 2px solid red">SZCZEGÓŁY DOSTAWY <i class="fas fa-car"></i></div><div class="col-md-9 black">
+            Darmowa dostawa, przy zamówieniu za minimum 70 zł <br />
+            Darmowa dostawa jedynie w odległości do 25 km, od lokalu.<br /> Przy większych odległościach dostawa dodatkowo płatna 1 zł za każdy kilometr.<br />
+            Przy zamówieniu za kwotę niższą niż 75 zł, dostawa płatna jednorazowo 10 zł ( do 25 km, potem 1 zł za każdy kilometr.
+        </div>
+
     </div>
 </div>
+
+
+
