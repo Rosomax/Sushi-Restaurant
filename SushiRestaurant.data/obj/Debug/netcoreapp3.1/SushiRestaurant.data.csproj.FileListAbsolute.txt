@@ -1,0 +1,11 @@
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\bin\Debug\netcoreapp3.1\SushiRestaurant.data.deps.json
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\bin\Debug\netcoreapp3.1\SushiRestaurant.data.dll
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\bin\Debug\netcoreapp3.1\SushiRestaurant.data.pdb
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\obj\Debug\netcoreapp3.1\SushiRestaurant.data.csprojAssemblyReference.cache
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\obj\Debug\netcoreapp3.1\SushiRestaurant.data.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\obj\Debug\netcoreapp3.1\SushiRestaurant.data.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\obj\Debug\netcoreapp3.1\SushiRestaurant.data.dll
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\obj\Debug\netcoreapp3.1\SushiRestaurant.data.pdb
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\bin\Debug\netcoreapp3.1\SushiRestaurant.data.runtimeconfig.json
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\bin\Debug\netcoreapp3.1\SushiRestaurant.data.runtimeconfig.dev.json
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.data\obj\Debug\netcoreapp3.1\SushiRestaurant.data.genruntimeconfig.cache

@@ -1,0 +1,8 @@
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\bin\Debug\netcoreapp3.1\SushiRestaurant.core.deps.json
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\bin\Debug\netcoreapp3.1\SushiRestaurant.core.dll
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\bin\Debug\netcoreapp3.1\SushiRestaurant.core.pdb
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\obj\Debug\netcoreapp3.1\SushiRestaurant.core.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\obj\Debug\netcoreapp3.1\SushiRestaurant.core.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\obj\Debug\netcoreapp3.1\SushiRestaurant.core.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\obj\Debug\netcoreapp3.1\SushiRestaurant.core.dll
+C:\Users\Asus\Desktop\Projekt-ASP.NET-WEB-Aplication-Sushi\SushiRestaurant.core\obj\Debug\netcoreapp3.1\SushiRestaurant.core.pdb
