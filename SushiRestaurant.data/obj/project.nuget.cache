@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IAp8zLl/jl9WCfszsWUW/xxYBTVNo/jcZ241U6OP6WwSiqH8oDBvT/YhiU4DUSJiNqami6gBKjcqdYH3Jg7IkQ==",
+  "dgSpecHash": "7xIv4s9GELSlKqSnBrH9gv4wU94TublU9aJWkcdxNhYvj7HQvG8Vi+ABs+svaAT6SCj5oH/rYRhMWys9GFjayw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Desktop\\Projekt-ASP.NET-WEB-Aplication-Sushi\\SushiRestaurant.data\\SushiRestaurant.data.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.3\\microsoft.entityframeworkcore.design.3.1.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.3\\microsoft.entityframeworkcore.relational.3.1.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.3\\microsoft.entityframeworkcore.sqlserver.3.1.3.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.3\\microsoft.entityframeworkcore.tools.3.1.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.3\\microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.3\\microsoft.extensions.caching.memory.3.1.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",

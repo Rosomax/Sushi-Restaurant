@@ -8,6 +8,8 @@ namespace SushiRestaurant.core
 {
     public class ProductsSushi
     {
+        [Key]
+        public int ProductsSushiId {get;set;}
         [ForeignKey("Products")]
         public int ProductId { get; set; }
         [ForeignKey("Sushi")]

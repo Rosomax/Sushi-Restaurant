@@ -1,0 +1,41 @@
+﻿@page
+@using SushiRestaurant.core
+@model Sushi_Restaurant.Pages.Hidden.ProductsManageModel
+
+@{
+    ViewData["Title"] = "Produkty";
+}
+
+<h2 style="margin-top:20vh">Zarządzanie Produktami - Stany Magazynowe</h2>
+<form method="get">
+    <div class="form-group">
+        <div class=" input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-default bg-light" style="border: 1px solid black">
+                    <i class="glyphicon glyphicon-search"> Szukaj</i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
+@foreach (var produkt in Model.Products)
+{
+
+<div class="panel panel-default">
+    <div class="panel-heading bg-white">
+        <h3>@produkt.NazwaProdukt</h3>
+    </div>
+    <div class="panel-body">
+        <span>Liczba sztuk: @produkt.IloscProdukt</span>
+    </div>
+    <div class="panel-footer bg-white">
+        <span>Jednostka: @produkt.JednostkaProdukt</span>
+    </div>
+    <br />
+</div>
+}
+
+
+<a asp-page=".\EditAddProduct" class="btn btn-default bg-white" style="border: 1px solid red">Dodaj produkt</a>

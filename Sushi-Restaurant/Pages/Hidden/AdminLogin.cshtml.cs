@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using SushiRestaurant.core;
 using SushiRestaurant.data;
 
 namespace Sushi_Restaurant.Pages.Hidden
@@ -12,12 +13,12 @@ namespace Sushi_Restaurant.Pages.Hidden
     public class AdminLoginModel : PageModel
     {
         private readonly IUserData userData;
-        private readonly IHtmlHelper htmlHelper;
 
-        public AdminLoginModel(IUserData userData, IHtmlHelper htmlHelper)
+
+        public Users User { get; set; }
+        public AdminLoginModel(IUserData userData)
         {
             this.userData = userData;
-            this.htmlHelper = htmlHelper;
         }
 
         public void OnGet()

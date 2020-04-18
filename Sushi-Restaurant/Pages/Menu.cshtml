@@ -1,0 +1,12 @@
+﻿@page
+@model Sushi_Restaurant.Pages.MenuModel
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Menu</h1>
+
+@foreach (var sushi in Model.Sushi)
+{
+    <partial name="_SushiUserMenu" model="sushi" />
+}

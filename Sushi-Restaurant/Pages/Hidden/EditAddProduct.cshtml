@@ -1,0 +1,32 @@
+﻿@page
+@model Sushi_Restaurant.Pages.Hidden.EditAddProductModel
+@{
+    ViewData["Title"] = "EditAddProduct";
+}
+
+<h2 style="margin-top:20vh">Dodaj lub edytuj produkt</h2>
+<form method="post">
+    <input type="hidden" asp-for="Products.ProduktId" />
+    <div class="form-group">
+        <label asp-for="Products.NazwaProdukt"></label>
+        <input asp-for="Products.NazwaProdukt" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Ilość</label>
+        <input asp-for="Products.IloscProdukt" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Jednostka</label>
+        <input class="form-control" asp-for="Products.JednostkaProdukt"/>
+    </div>
+    <div class="form-group"><button class="btn btn-default bg-white" style="border: 1px solid red"><b>Zapisz zmiany</b></button></div>
+</form>
+<br />
+
+<a asp-page=".\ProductsManage" class="btn btn-default bg-white" style="border: 1px solid red">Wszystkie produkty</a>
+
+@section Scripts {
+    <script><partial name="_ValidationScriptsPartial" /></script>
+
+}
+
