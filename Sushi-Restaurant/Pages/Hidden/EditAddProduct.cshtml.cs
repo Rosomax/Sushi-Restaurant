@@ -43,6 +43,11 @@ namespace Sushi_Restaurant.Pages.Hidden
 
         public IActionResult OnPost()
         {
+            if (!ModelState.IsValid)
+            {
+
+                return Page();
+            }
             if (Products.ProduktId > 0)
             {
                 productData.UpdateProdukt(Products);
@@ -54,8 +59,8 @@ namespace Sushi_Restaurant.Pages.Hidden
 
             productData.SaveChanges();
             TempData["Message"] = "Produkt został zapisany";
-            return RedirectToPage("./Hidden/ProductsManage", new { produktId = Products.ProduktId });
-
+            return RedirectToPage("./ProductsManage");
+            //return RedirectToPage("./ProductsManage", new { produktId = Products.ProduktId });
         }
     }
 }

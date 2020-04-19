@@ -5,6 +5,11 @@
 @{
     ViewData["Title"] = "Produkty";
 }
+<style>
+    body {
+        background-image: url('images/bamboo-bg-1.jpg');
+    }
+</style>
 
 <h2 style="margin-top:20vh">Zarządzanie Produktami - Stany Magazynowe</h2>
 <form method="get">
@@ -20,22 +25,50 @@
     </div>
 </form>
 
-@foreach (var produkt in Model.Products)
-{
 
-<div class="panel panel-default">
-    <div class="panel-heading bg-white">
+<table class="table table-image">
+    <thead>
+        <tr style="background-color: orangered">
+            <th scope="col">Nazwa Produktu </th>
+            <th scope="col">Jednostka</th>
+            <th scope="col">Ilość</th>
+            <th scope="col">Akcje</th>
+        </tr>
+    </thead>
+    @foreach (var produkt in Model.Products)
+    {
+<tr style="border: dotted 2px red">
+    <td>
         <h3>@produkt.NazwaProdukt</h3>
+    </td>
+    <td>
+        <h3>@produkt.IloscProdukt </h3>
+    </td>
+    <td>
+        <h3>@produkt.JednostkaProdukt</h3>
+    </td>
+    <td>
+        <a class="btn bg-warning rounded" asp-page="./EditAddProduct" asp-route-produktId="@produkt.ProduktId">
+        <h5><i class="glyphicon glyphicon-pencil">Edytuj</i></h5></a>
+        <a class="btn bg-danger rounded text-light" asp-page="./DeleteProduct" asp-route-produktId="@produkt.ProduktId">
+        <h5><i class="glyphicon glyphicon-trash">Usuń</i></h5></a>
+    </td>
+</tr>
+    }
+</table>
+<!--/*<div class="panel panel-default rounded border border-danger mb-1 col-3">
+    <div class="panel-heading">
+        <h3>//produkt.NazwaProdukt</h3>
     </div>
     <div class="panel-body">
-        <span>Liczba sztuk: @produkt.IloscProdukt</span>
+        <span>Liczba sztuk: produkt.IloscProdukt</span>
     </div>
-    <div class="panel-footer bg-white">
-        <span>Jednostka: @produkt.JednostkaProdukt</span>
+    <div class="panel-footer">
+        <span>Jednostka: produkt.JednostkaProdukt</span>
     </div>
     <br />
-</div>
-}
+</div>-->
+
 
 
 <a asp-page=".\EditAddProduct" class="btn btn-default bg-white" style="border: 1px solid red">Dodaj produkt</a>

@@ -1,14 +1,14 @@
-﻿@page
+﻿@page  "{product:int?}"
 @model Sushi_Restaurant.Pages.Hidden.EditAddProductModel
 @{
     ViewData["Title"] = "EditAddProduct";
 }
 
-<h2 style="margin-top:20vh">Dodaj lub edytuj produkt</h2>
+<h2 style="margin-top:20vh">Dodaj lub edytuj produkt @Model.Products.NazwaProdukt</h2>
 <form method="post">
     <input type="hidden" asp-for="Products.ProduktId" />
     <div class="form-group">
-        <label asp-for="Products.NazwaProdukt"></label>
+        <label>Nazwa Produktu</label>
         <input asp-for="Products.NazwaProdukt" class="form-control" />
     </div>
     <div class="form-group">
@@ -17,7 +17,7 @@
     </div>
     <div class="form-group">
         <label>Jednostka</label>
-        <input class="form-control" asp-for="Products.JednostkaProdukt"/>
+        <input class="form-control" asp-for="Products.JednostkaProdukt" />
     </div>
     <div class="form-group"><button class="btn btn-default bg-white" style="border: 1px solid red"><b>Zapisz zmiany</b></button></div>
 </form>

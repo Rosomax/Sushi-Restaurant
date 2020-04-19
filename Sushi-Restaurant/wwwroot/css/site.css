@@ -59,8 +59,11 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('../images/bg-rep-4.jpg');
+    background-size: auto;
+    background-repeat:repeat-y;
 }
 .footer {
   position: absolute;

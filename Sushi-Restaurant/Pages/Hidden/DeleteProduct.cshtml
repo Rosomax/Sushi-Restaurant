@@ -1,0 +1,14 @@
+﻿@page "{produktId}"
+@model Sushi_Restaurant.Pages.Hidden.DeleteProductModel
+@{
+    ViewData["Title"] = "DeleteProduct";
+}
+
+<h1 style="margin-top:10vh">Usuwanie Produktu</h1>
+
+<div class="alert alert-danger">Czy jesteś pewien, że chcesz usunąć @Model.Produkt.NazwaProdukt ?</div>
+<form method="post">
+    <button type="submit" class="btn rounded  bg-danger w-25">Tak</button>
+    <a asp-page="ProductsManage" class="btn rounded bg-light w-25">Anuluj</a>
+</form>
+
