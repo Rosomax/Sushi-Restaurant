@@ -1,40 +1,61 @@
-﻿using SushiRestaurant.core;
+﻿using Microsoft.EntityFrameworkCore;
+using SushiRestaurant.core;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace SushiRestaurant.data
 {
     public class SQLSushiData : ISushiData
     {
+        private readonly SushiRestaurantDbContext dbS;
+
+        public SQLSushiData(SushiRestaurantDbContext dbS)
+        {
+            this.dbS = dbS;
+        }
+
         public Sushi AddNewSushi(Sushi newSushi)
         {
-            throw new NotImplementedException();
+            dbS.Add(newSushi);
+            return newSushi;
         }
 
         public Sushi DeleteSushi(int id)
         {
-            throw new NotImplementedException();
+            var sushiToDelete = GetById(id);
+            if(sushiToDelete!=null)
+            {
+                dbS.Remove(sushiToDelete);
+            }
+            return sushiToDelete;
         }
 
         public Sushi GetById(int id)
         {
-            throw new NotImplementedException();
+            return dbS.Sushi.Find(id);
         }
 
         public IEnumerable<Sushi> GetByName(string name)
         {
-            throw new NotImplementedException();
+            var sushiLista = from s in dbS.Sushi
+                                where s.NazwaSushi.StartsWith(name) || string.IsNullOrEmpty(name)
+                                orderby s.NazwaSushi
+                                select s;
+            return sushiLista;
         }
 
         public int SaveChanges()
         {
-            throw new NotImplementedException();
+            return dbS.SaveChanges();
         }
 
         public Sushi UpdateSushi(Sushi updatedSushi)
         {
-            throw new NotImplementedException();
+            var entity = dbS.Attach(updatedSushi);
+            entity.State = EntityState.Modified;
+            return updatedSushi;
         }
     }
 }

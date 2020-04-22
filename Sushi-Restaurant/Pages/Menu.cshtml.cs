@@ -16,15 +16,17 @@ namespace Sushi_Restaurant.Pages
         private readonly ISushiData sushiData;
 
         public IEnumerable<Sushi> Sushi { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
         public MenuModel(IConfiguration config, ISushiData sushiData)
         {
             this.config = config;
             this.sushiData = sushiData;
         }
 
-        public void OnGet()
+        public void OnGet(string searchTerm)
         {
-
+            Sushi = sushiData.GetByName(searchTerm);
         }
     }
 }

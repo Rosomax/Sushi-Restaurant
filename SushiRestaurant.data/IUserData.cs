@@ -9,7 +9,7 @@ namespace SushiRestaurant.data
         Users Update(Users updatedUser);
         Users Add(Users newUser);
         Users Delete(int id);
-        Users Verify(string login, string password);
+        bool Verify(Users checkedUser);
         int SaveChanges();
     }
 }

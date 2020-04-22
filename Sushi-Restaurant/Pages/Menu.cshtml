@@ -6,7 +6,49 @@
 
 <h1>Menu</h1>
 
-@foreach (var sushi in Model.Sushi)
-{
-    <partial name="_SushiUserMenu" model="sushi" />
-}
+
+<h2 style="margin-top:10vh">Znajdź swoje ulubione sushi</h2>
+<form method="get">
+    <div class="form-group">
+        <div class=" input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <span class="input-group-btn">
+                <button class="btn btn-default bg-light" style="border: 1px solid black">
+                    <i class="glyphicon glyphicon-search"> Szukaj</i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
+<table class="table table-image">
+    <thead>
+        <tr style="background-color: orangered">
+            <th scope="col">Nazwa sushi </th>
+            <th scope="col">Składniki</th>
+            <th scope="col">Liczba kawałków</th>
+            <th scope="col">Opis</th>
+            <th scope="col">Cena</th>
+        </tr>
+    </thead>
+    @foreach (var sushi in Model.Sushi)
+    {
+<tr style="border: dotted 2px red; background-color: rgba(120,0,0,0.5)">
+    <td>
+        <h3>@sushi.NazwaSushi</h3>
+    </td>
+    <td>
+        <h3>@sushi.Składniki</h3>
+    </td>
+    <td>
+        <h3>@sushi.IloscSushi</h3>
+    </td>
+    <td>
+        <h3>@sushi.OpisSushi</h3>
+    </td>
+    <td>
+        <h3>@sushi.CenaSushi</h3>
+    </td>
+</tr>
+    }
+</table>

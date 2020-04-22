@@ -1,10 +1,13 @@
-﻿@page
+﻿@page "{user:int?}"
 @model Sushi_Restaurant.Pages.Hidden.AdminLoginModel
 @{
     Layout = null;
 }
 
-
+<style>
+body { background-image: url('../images/adm-bg.jpg');
+       background-size: cover; }
+</style>
 
 <!DOCTYPE html>
 
@@ -17,20 +20,43 @@
             width: 30vw;
             height: 30vh;
             border-radius: 25px;
-            background-color: gray;
+            border:3px solid black;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-            opacity: 0.5;
+            background-color: rgba(60,0,60,0.8);
+        }
+        .PanelElement {
+            height: 30%;
+            text-align:center;
+            font-size: 2rem;
+            color: white;
+            line-height: 10vh;
+            font-weight:400;
+
+            
         }
     </style>
 </head>
 <body>
-    <div class="LogPanel">
-        
-    </div>
+    <form method="post">
+        <div class="LogPanel">
+            <div class="form-group PanelElement">
+                <div>
+                    <label asp-for="User.Login" class="w-25"></label>
+                    <input asp-for="User.Login" class="form-control" style="border: 1px solid red;font-size: 2rem" />
+                </div>
+                
+            </div>
+            <div class="form-group PanelElement">
+                <label asp-for="User.Password"></label>
+                <input asp-for="User.Password" class="form-control" style="border: 1px solid red; font-size: 2rem" />
+            </div>
+            <div class="form-group PanelElement"><button class="btn btn-default bg-white" style="border: 2px solid red; font-size: 2.2rem"><b>ZALOGUJ</b></button></div>
+        </div>
+    </form>
 </body>
 </html>

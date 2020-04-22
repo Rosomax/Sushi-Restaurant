@@ -32,10 +32,11 @@ namespace Sushi_Restaurant
 
             services.AddScoped<IProductData, SQLProductData>();
             services.AddScoped<ISushiData, SQLSushiData>();
+            services.AddScoped<IUserData, SQLUserData>();
             services.AddScoped<IZestawyData, SQLZestawyData>();
             services.AddScoped<IProduktySushi, SQLProductsSushi>();
             services.AddScoped<IZestawySushi, SQLZestawySushi>();
-
+            
             services.AddRazorPages();
             services.AddControllers();
         }

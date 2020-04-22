@@ -23,7 +23,8 @@ namespace Sushi_Restaurant.Pages.Hidden
             Produkt = productData.GetById(produktId);
             if(Produkt==null)
             {
-                RedirectToPage("./ProductsManage");
+               return RedirectToPage("/NotFound");
+
             };
 
             return Page();
@@ -35,7 +36,7 @@ namespace Sushi_Restaurant.Pages.Hidden
             productData.SaveChanges();
             if (produkt == null)
             {
-                RedirectToPage("./NotFound");
+                RedirectToPage("/NotFound");
             }
             TempData["Message"] = $"{produkt.NazwaProdukt} usunięto";
             return RedirectToPage("./ProductsManage");
