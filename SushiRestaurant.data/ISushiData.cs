@@ -12,6 +12,7 @@ namespace SushiRestaurant.data
         Sushi AddNewSushi(Sushi newSushi);
         Sushi UpdateSushi(Sushi updatedSushi);
         Sushi DeleteSushi(int id);
+        string GetSkladniki(int id);
         int SaveChanges();
     }
 }

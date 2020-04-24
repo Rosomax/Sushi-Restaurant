@@ -46,6 +46,20 @@ namespace SushiRestaurant.data
             return sushiLista;
         }
 
+        public string GetSkladniki(int id)
+        {
+            var entryPoint = (from s in dbS.Sushi
+                              join ps in dbS.ProductsSushi on s.SushiId equals ps.SushiId
+                              join p in dbS.Products on ps.ProductId equals p.ProduktId
+                              where s.SushiId == id && s.SushiId == ps.SushiId && ps.ProductId== p.ProduktId
+                              orderby p.NazwaProdukt
+                              select new
+                              {
+                                  Składniki = p.NazwaProdukt.ToString()
+                              }).Take(10);
+            return entryPoint.ToString();
+        }
+
         public int SaveChanges()
         {
             return dbS.SaveChanges();

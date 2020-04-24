@@ -22,11 +22,13 @@ namespace Sushi_Restaurant.Pages
         {
             this.config = config;
             this.sushiData = sushiData;
+            
         }
-
+        
         public void OnGet(string searchTerm)
         {
             Sushi = sushiData.GetByName(searchTerm);
+            //string skladniki=sushiData.GetSkladniki(1);
         }
     }
 }

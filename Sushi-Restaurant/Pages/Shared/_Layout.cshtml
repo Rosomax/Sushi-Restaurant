@@ -65,19 +65,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item, navigationItem">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index"><i class="fas fa-home"></i> Start</a>
+                            <a id="StartMenu" style="cursor:pointer" class="nav-link text-dark"><i class="fas fa-home"></i> Start</a>
                         </li>
                         <li class="nav-item, navigationItem">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Menu"><i class="fas fa-utensils"></i> Menu</a>
                         </li>
                         <li class="nav-item, navigationItem">
-                            <a href="#Kontakt" class="nav-link text-dark"><i class="fas fa-phone-alt"></i> Kontakt</a>
+                            <a id="KontaktMenu" style="cursor:pointer" class="nav-link text-dark"><i class="fas fa-phone-alt"></i> Kontakt</a>
                         </li>
                         <li class="nav-item, navigationItem">
-                            <a href="#Dostawa" class="nav-link text-dark"><i class="fas fa-truck"></i> Dostawa</a>
+                            <a id="DostawaMenu" style="cursor:pointer" class="nav-link text-dark"><i class="fas fa-truck"></i> Dostawa</a>
                         </li>
                         <li class="nav-item, navigationItem">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index"><i class="fas fa-comments"></i> Opinie</a>
+                            <a id="OpinieMenu" style="cursor:pointer" class="nav-link text-dark"><i class="fas fa-comments"></i> Opinie</a>
                         </li>
                         <li class="nav-item, navigationItem">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Hidden/AdminLogin"><i class="fas fa-user-cog"></i> Administrator</a>
@@ -87,7 +87,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div id="Mainbox" class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

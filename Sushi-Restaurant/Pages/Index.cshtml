@@ -58,6 +58,37 @@
         border-bottom: 2px solid red;
         border-top: 2px solid red;
     }
+
+    .show{
+        display:inline-block;
+        height: 2vh;
+    }
+    .spanContent {
+        
+        border: 1px solid red;
+        padding: 0px;
+        font-size: 2vw;
+        color: white;
+        background-image: url('images/bg-3-repeat.jpg');
+        height: 0px;
+    }
+    .cursor {
+        opacity: 0;
+        transition: .2s;
+    }
+
+    .cursor.active {
+            opacity: 1;
+        }
+    .machine {
+        font-family: 'Lobster';
+        width: 100%;
+        font-size: 2vw;
+        letter-spacing: 1px;
+        background-color: white;
+        border: 2px solid red;
+        height: 20vh;
+    }
 </style>
 
 <div class="container">
@@ -83,17 +114,26 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="col-md-4 bottomIndexDiv">
+        <div id="Promocje" class="col-md-4 bottomIndexDiv">
             <img class="w-100" src="~/images/promotion.jpg" />
             Promocje
         </div>
-        <div class="col-md-4 bottomIndexDiv">
+        <div id="Onas" class="col-md-4 bottomIndexDiv" style="cursor:pointer">
             <img class="w-100" src="~/images/aboutUs.jpg" />
             O nas
         </div>
-        <div class="col-md-4 bottomIndexDiv">
+        <div id="wspolpraca" class="col-md-4 bottomIndexDiv">
             <img class="w-100" src="~/images/cooperate.jpg" />
             Współpraca
+        </div>
+        <div id="description" class="col-12, spanContent">
+            <span id="Onasspan">
+                Od ponad 10 lat przygotwoujemy sushi. Nasze sushi przygotowywane jest w momencie zamówienia i serwowane najszybciej
+                jak potrafimy. Stawiamy na wysoką jakość składników i niepowtarzalny smak.
+                <br />
+                Dbając o Państwa komfort i dobry smak, jakość jedzenia oraz obsługi
+                jest systematycznie oceniana przez specjalnie wyszkolonych audytorów oraz tajemniczych klientów.
+            </span>
         </div>
         <div class="col-md-12 parallax">
         </div>
@@ -105,14 +145,19 @@
         <div class="col-md-3 red">LOKALIZACJA <i class="fas fa-map-marker-alt"></i></div><div class="col-md-9 black">Warszawa <br />ul. Przykładowa 15</div>
         <div class="col-md-3 red">E-MAIL <i class="fas fa-envelope"></i></div><div class="col-md-9 black"><a href="mailto:sushirestaurant@domain.com ">sushirestaurant@domain.com</a></div>
         <div class="col-md-12 parallax" style="background-image: url('images/background-2.jpg');"> </div>
-        <div id="Dostawa" name="Dostawa"  class="col-md-12 topHead"> DOSTAWA</div>
+        <div id="Dostawa" name="Dostawa" class="col-md-12 topHead"> DOSTAWA</div>
         <div class="col-md-3 red" style="border-top: 2px solid red">SZCZEGÓŁY DOSTAWY <i class="fas fa-car"></i></div><div class="col-md-9 black">
             Darmowa dostawa, przy zamówieniu za minimum 70 zł <br />
             Darmowa dostawa jedynie w odległości do 25 km, od lokalu.<br /> Przy większych odległościach dostawa dodatkowo płatna 1 zł za każdy kilometr.<br />
             Przy zamówieniu za kwotę niższą niż 75 zł, dostawa płatna jednorazowo 10 zł ( do 25 km, potem 1 zł za każdy kilometr.
         </div>
-
+        <div class="col-md-12 parallax" style="background-image: url('images/sushi-main-1.jpg');"> </div>
+        <div id="Opinie" name="Opinie" class="col-md-12 topHead"> OPINIE KLIENTÓW</div>
+        <div class="machine">
+            <span class="text"></span><span class="cursor">|</span>
+        </div>
     </div>
+    
 </div>
 
 
